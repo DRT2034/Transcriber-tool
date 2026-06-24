@@ -22,7 +22,7 @@ from deepmultilingualpunctuation import PunctuationModel
 
 
 
-# Force CPU for now
+# Force CPU for now, as GPU is problematic with MAC 
 device = "cpu"
 print("Using device:", device)
 
