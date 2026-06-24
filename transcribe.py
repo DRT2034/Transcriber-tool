@@ -34,11 +34,6 @@ result = model.transcribe(audio_path, language="en", verbose=True)
 print("\n--- TRANSCRIPT ---\n")
 print(result["text"][:500])  # preview first 500 characters
 
-punc_model = PunctuationModel()
-raw_text = result["text"]
-punctuated_text = punc_model.restore_punctuation(raw_text)
-
-
 # ---- PDF Export with Paragraphs ----
 base_name = os.path.splitext(audio_path)[0]  
 pdf_path = f"{base_name}.pdf"
