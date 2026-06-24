@@ -1,0 +1,5 @@
+cd /Users/asterckx/Documents/Transcriber-tool
+source .venv/bin/activate          # ← start the virtual environment
+python app.py                      # then open http://127.0.0.1:5000
+# upload your file, wait, browser downloads the PDF
+deactivate                         # ← end the virtual environment when done
